@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Signature</title>
+</head>
+
+<body class="w-screen h-screen bg-slate-300 flex justify-center items-center">
+    <div class="main bg-slate-400 rounded-2xl w-fit p-2">
+        <div
+            class="top sm:flex sm:gap-20 sm:justify-center bg-slate-500 p-1 text-center font-semibold text-lg text-white rounded-lg">
+            <div class="black">
+                <p>Color picker</p>
+                <input type="color" class="form-control" id="colorPicker">
+            </div>
+            <div class="black">
+                <p>Background</p>
+                <input type="color" value="#ffffff" class="form-control" id="canvasColor">
+            </div>
+            <div class="black">
+                <p>Font size</p>
+                <select id="fontPicker" class="text-black">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                    <option value="25">25px</option>
+                    <option value="30">30px</option>
+                </select>
+            </div>
+        </div>
+        <div class="w-full">
+            <canvas class="canvas mt-2 bg-white rounded-lg" width="800" height="500" id="myCanvas"></canvas>
+        </div>
+        <div class="bottom flex justify-center gap-12 font-semibold text-xl mt-2">
+            <button class="btn btn-danger p-2 w-40 rounded-md bg-red-600 text-white" id="clearButton">Clear</button>
+            <button class="btn btn-success p-2 w-40 rounded-md bg-yellow-400" id="saveButton">Download</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
